@@ -264,7 +264,7 @@ aside{
 .aespa{
   width: 166px;
   height: 220px;
-  background-color: var(--cor3);
+  padding-left: 5px;
   border-radius: 10px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
@@ -296,6 +296,7 @@ aside{
 .aespa-inicial {
   width: 150px;           /* ou o tamanho que quiser */
   height: 150px;
+  
   border-radius: 50%;     /* deixa redonda */
   object-fit: cover; 
   object-fit: cover;
@@ -305,22 +306,23 @@ aside{
 
 .tommy{
   width: 166px;
-  height: 220px;           /* altura fixa pra não variar */
+  height: 220px;  
+  padding-left: 7px;         /* altura fixa pra não variar */
   background-color: var(--cor3);
-  border-radius: 10px;
+  border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease;
   cursor: pointer;
   box-sizing: border-box; 
 }
 
 .tommy:hover{
-  background-color: var(--cor2); /* uma cor mais clara */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 7px;
+    border-radius: 7px;
     transition: background-color 0.8s ease, box-shadow 0.8s ease;
     cursor: pointer;
     transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08); /* zoom suave */
+    background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
 .tommy h3{
@@ -343,6 +345,17 @@ aside{
   transform-origin: center center;   
 }
 
+.pastel-ghost{
+  width: 166px;
+  height: 220px;  
+  padding-left: 7px;         /* altura fixa pra não variar */
+  background-color: var(--cor3);
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  box-sizing: border-box; 
+}
+
 .pastel-ghost h3{
   padding-top: 5px;
   padding-bottom: 10px;
@@ -360,6 +373,27 @@ aside{
   object-fit: cover; 
 }
 
+.pastel-ghost:hover{
+    border-radius: 7px;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08); /* zoom suave */
+    background: linear-gradient(to bottom, var(--cor3), var(--cor2));
+}
+
+.j-eskine{
+  width: 166px;
+  height: 220px;  
+  padding-left: 7px;         /* altura fixa pra não variar */
+  background-color: var(--cor3);
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  box-sizing: border-box; 
+}
+
 .j-eskine h3{
   padding-top: 5px;
   padding-bottom: 10px;
@@ -375,6 +409,16 @@ aside{
   height: 150px;
   border-radius: 50%;     /* deixa redonda */
   object-fit: cover; 
+}
+
+.j-eskine:hover{
+    border-radius: 7px;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08); /* zoom suave */
+    background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
 .tate-mcrae h3{
