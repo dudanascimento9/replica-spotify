@@ -1,233 +1,229 @@
 @charset "UTF-8";
 
-:root{
-    --cor0:rgb(22, 20, 20);
-    --cor1: #353C3D;
-    --cor2: #3C3C3C;
-    --cor3:rgb(41, 39, 39);
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+:root {
+  --cor0: rgb(22, 20, 20);
+  --cor1: #353c3d;
+  --cor2: #3c3c3c;
+  --cor3: rgb(41, 39, 39);
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    background-color:rgb(0, 0, 0);
-    color: white;
-    font-family: var(--fonte-padrao);
-    font-weight: bold;
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: var(--fonte-padrao);
+  font-weight: bold;
 }
-
-
 
 .logo-nome {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  .logo-nome h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-
-  .topo-ouvir{
-    display: flex;  
-    background-color: var(--cor2);
-    align-items: center;
-    flex-direction: row;
-    padding-top: 10px; 
-    padding-bottom: 13px; 
-    padding-right: 230px;
-    border-radius: 20px; /* Bordas arredondadas */
-    color: white; /* Cor do texto, se o fundo for escuro */
-    gap: 8px;
-    font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 
-.topo-ouvir h4{
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-nome h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.topo-ouvir {
+  display: flex;
+  background-color: var(--cor2);
+  align-items: center;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-right: 230px;
+  border-radius: 20px; /* Bordas arredondadas */
+  color: white; /* Cor do texto, se o fundo for escuro */
+  gap: 8px;
+  font-size: 12px;
+}
+
+.topo-ouvir h4 {
   color: rgb(223, 218, 215);
   font-size: 13px;
 }
 
 .icone-lupa {
   padding-left: 10px;
-  width: 16px;    /* tamanho pequeno da lupa */
+  width: 16px; /* tamanho pequeno da lupa */
   height: 16px;
   object-fit: contain;
 }
 
 nav {
-    display: flex;
-    align-items: center;         /* Alinha verticalmente no centro */
-    justify-content: space-between; /* Espaça os elementos horizontalmente */
-    padding: 10px 20px;
-    color: white;
-    font-weight: bold;
-  }
+  display: flex;
+  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: space-between; /* Espaça os elementos horizontalmente */
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
 
-  nav img.logo {
+nav img.logo {
   width: 50px;
   height: auto;
   margin-right: 10px;
 }
 
-nav h1, nav h4 {
-    margin: 0 10px;
-  }
+nav h1,
+nav h4 {
+  margin: 0 10px;
+}
 
-  nav button {
-    margin-left: 10px;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-  }
+nav button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-  button.inscrever{
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .botoes {
-    display: flex;
-    gap: 10px; /* espaço entre os botões */
-  }
-  
-  .botoes button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-  }
-  
-  .botoes.entrar {
-    background-color: white;
-    font-weight: bold;
-  }
-
-
-aside{
-    background-color:var(--cor0);
-    width: 30%;
+button.inscrever {
+  background-color: black;
   color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 10px; 
+  font-weight: bold;
 }
 
-.container {
-    display: flex;
-    height: 100vh; /* altura total da tela, opcional */
-    gap: 6px;
-  }
-
-
-  aside h3 {
-    padding: 0;
-    margin: 0;
-    color: rgb(240, 238, 237);
-    
-  }
-
-  .titulo-biblioteca {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* separa o + pro final */
-    gap: 8px;
-    padding: 6px 0 20px 0px; /* top, right, bottom, left */
-  }
-
-  .titulo-biblioteca h3 {
-    flex: 1;
-    margin: 0;
-  }
-
-  .botao-mais {
-    font-size: 40px;
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 50%;
-    color: white;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-.icone-biblioteca {
-  width: 50px;             /* Tamanho pequeno */
-  height: 50px;            /* Força a altura igual ao width */
-  object-fit: contain;     /* Mantém proporção da imagem */
+.botoes {
+  display: flex;
+  gap: 10px; /* espaço entre os botões */
 }
 
-.playlist button{
-  padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+.botoes button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
 }
 
-.criar-playlist{
+.botoes.entrar {
   background-color: white;
   font-weight: bold;
 }
 
-.fundo-playlist{
+aside {
+  background-color: var(--cor0);
+  width: 30%;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* altura total da tela, opcional */
+  gap: 6px;
+}
+
+aside h3 {
+  padding: 0;
+  margin: 0;
+  color: rgb(240, 238, 237);
+}
+
+.titulo-biblioteca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa o + pro final */
+  gap: 8px;
+  padding: 6px 0 20px 0px; /* top, right, bottom, left */
+}
+
+.titulo-biblioteca h3 {
+  flex: 1;
+  margin: 0;
+}
+
+.botao-mais {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  color: white;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone-biblioteca {
+  width: 50px; /* Tamanho pequeno */
+  height: 50px; /* Força a altura igual ao width */
+  object-fit: contain; /* Mantém proporção da imagem */
+}
+
+.playlist button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.criar-playlist {
+  background-color: white;
+  font-weight: bold;
+}
+
+.fundo-playlist {
   background-color: var(--cor3);
-  border-radius: 10px; 
+  border-radius: 10px;
   margin-top: 15px;
   padding-left: 10px;
   padding-bottom: 20px;
   padding-right: 30px;
   width: 92%;
-} 
+}
 
-.fundo-playlist h4{
+.fundo-playlist h4 {
   padding-top: 10px;
   padding-bottom: 8px;
 }
 
-.fundo-playlist p{
+.fundo-playlist p {
   font-size: 13px;
   padding-bottom: 20px;
 }
 
-.fundo-podcast{
+.fundo-podcast {
   background-color: var(--cor3);
   margin-top: 15px;
-  border-radius: 10px; 
+  border-radius: 10px;
   margin-top: 15px;
   padding-left: 10px;
   padding-bottom: 20px;
   padding-right: 30px;
-  width: 92%; 
+  width: 92%;
 }
 
-.fundo-podcast h4{
+.fundo-podcast h4 {
   padding-top: 10px;
   padding-bottom: 8px;
 }
 
-.fundo-podcast p{
+.fundo-podcast p {
   font-size: 13px;
   padding-bottom: 20px;
 }
 
-.podcast button{
+.podcast button {
   padding: 8px 17px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .criar-podcast {
@@ -235,49 +231,49 @@ aside{
   font-weight: bold;
 }
 
-.artistas{
-    background-color: var(--cor3);
-    border-radius: 20px;       /* Bordas arredondadas */         /* Largura fixa opcional */
-    width: 70%;
-    color: white;
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 10px; 
+.artistas {
+  background-color: var(--cor3);
+  border-radius: 20px; /* Bordas arredondadas */ /* Largura fixa opcional */
+  width: 70%;
+  color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .artistas-mostrar {
   display: flex;
   justify-content: space-between; /* joga um pra cada lado */
-  align-items: center;            /* alinha verticalmente */
-  padding: 0 10px;                /* opcional: espaçamento interno nas laterais */
+  align-items: center; /* alinha verticalmente */
+  padding: 0 10px; /* opcional: espaçamento interno nas laterais */
 }
 
-.artistas-mostrar h2{
+.artistas-mostrar h2 {
   margin-top: 0;
 }
 
-.artistas-mostrar h3{
+.artistas-mostrar h3 {
   padding-bottom: 15px;
   font-size: 23px;
 }
 
-.aespa{
-  width: 166px;
+.aespa {
+  width: 170px;
   height: 220px;
-  padding-left: 5px;
   border-radius: 10px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease,
+    transform 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
-.aespa:hover{
-    border-radius: 7px;
-    transition: background-color 0.8s ease, box-shadow 0.8s ease;
-    cursor: pointer;
-    transform: scale(1.08);
+.aespa:hover {
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  transform: scale(1.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transform: scale(1.08); /* zoom suave */
   background: linear-gradient(to bottom, var(--cor3), var(--cor2));
@@ -288,165 +284,177 @@ aside{
   padding-bottom: 10px;
 }
 
-.aespa p{
-  color:rgb(165, 159, 159);
+.aespa p {
+  color: rgb(165, 159, 159);
   font-size: 15px;
 }
 
 .aespa-inicial {
-  width: 150px;           /* ou o tamanho que quiser */
+  width: 150px; /* ou o tamanho que quiser */
   height: 150px;
-  
-  border-radius: 50%;     /* deixa redonda */
-  object-fit: cover; 
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
   object-fit: cover;
   transition: transform 0.1s ease;
-  transform-origin: center center;     /* preenche sem distorcer */
+  transform-origin: center center; /* preenche sem distorcer */
 }
 
-.tommy{
-  width: 166px;
-  height: 220px;  
-  padding-left: 7px;         /* altura fixa pra não variar */
+.tommy {
+  width: 170px;
+  height: 220px; /* altura fixa pra não variar */
   background-color: var(--cor3);
   border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease;
   cursor: pointer;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.tommy:hover{
-    border-radius: 7px;
-    transition: background-color 0.8s ease, box-shadow 0.8s ease;
-    cursor: pointer;
-    transform: scale(1.08);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.08); /* zoom suave */
-    background: linear-gradient(to bottom, var(--cor3), var(--cor2));
+.tommy:hover {
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08); /* zoom suave */
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
-.tommy h3{
+.tommy h3 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-.tommy p{
-  color:rgb(165, 159, 159);
+.tommy p {
+  color: rgb(165, 159, 159);
   font-size: 15px;
 }
 
-.tommy-inicial{
-  width: 150px;           /* ou o tamanho que quiser */
+.tommy-inicial {
+  width: 150px; /* ou o tamanho que quiser */
   height: 150px;
-  border-radius: 50%;     /* deixa redonda */
-  object-fit: cover; 
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
   object-fit: cover;
   transition: transform 0.1s ease;
-  transform-origin: center center;   
+  transform-origin: center center;
 }
 
-.pastel-ghost{
-  width: 166px;
-  height: 220px;  
-  padding-left: 7px;         /* altura fixa pra não variar */
-  background-color: var(--cor3);
+.pastel-ghost {
+  width: 170px;
+  height: 220px; /* altura fixa pra não variar */
   border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease;
   cursor: pointer;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.pastel-ghost h3{
+.pastel-ghost h3 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-.pastel-ghost p{
-  color:rgb(165, 159, 159);
+.pastel-ghost p {
+  color: rgb(165, 159, 159);
   font-size: 15px;
 }
 
-.pastel-inicial{
-  width: 150px;           /* ou o tamanho que quiser */
+.pastel-inicial {
+  width: 150px; /* ou o tamanho que quiser */
   height: 150px;
-  border-radius: 50%;     /* deixa redonda */
-  object-fit: cover; 
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
 }
 
-.pastel-ghost:hover{
-    border-radius: 7px;
-    transition: background-color 0.8s ease, box-shadow 0.8s ease;
-    cursor: pointer;
-    transform: scale(1.08);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.08); /* zoom suave */
-    background: linear-gradient(to bottom, var(--cor3), var(--cor2));
-}
-
-.j-eskine{
-  width: 166px;
-  height: 220px;  
-  padding-left: 7px;         /* altura fixa pra não variar */
-  background-color: var(--cor3);
+.pastel-ghost:hover {
   border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease;
   cursor: pointer;
-  box-sizing: border-box; 
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08); /* zoom suave */
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
-.j-eskine h3{
+.j-eskine {
+  width: 170px;
+  height: 220px; /* altura fixa pra não variar */
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.j-eskine h3 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-.j-eskine p{
-  color:rgb(165, 159, 159);
+.j-eskine p {
+  color: rgb(165, 159, 159);
   font-size: 15px;
 }
 
-.jeskine-inicial{
-  width: 150px;           /* ou o tamanho que quiser */
+.jeskine-inicial {
+  width: 150px; /* ou o tamanho que quiser */
   height: 150px;
-  border-radius: 50%;     /* deixa redonda */
-  object-fit: cover; 
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
 }
 
-.j-eskine:hover{
-    border-radius: 7px;
-    transition: background-color 0.8s ease, box-shadow 0.8s ease;
-    cursor: pointer;
-    transform: scale(1.08);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.08); /* zoom suave */
-    background: linear-gradient(to bottom, var(--cor3), var(--cor2));
+.j-eskine:hover {
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08); /* zoom suave */
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
-.tate-mcrae h3{
+.tate-mcrae {
+  width: 170px;
+  height: 220px; /* altura fixa pra não variar */
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tate-mcrae h3 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-.tate-mcrae p{
-  color:rgb(165, 159, 159);
+.tate-mcrae p {
+  color: rgb(165, 159, 159);
   font-size: 15px;
 }
 
-.tate-inicial{
-  width: 150px;           /* ou o tamanho que quiser */
+.tate-inicial {
+  width: 150px; /* ou o tamanho que quiser */
   height: 150px;
-  border-radius: 50%;     /* deixa redonda */
-  object-fit: cover; 
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
 }
 
-.artistas-icon{
+.tate-mcrae:hover {
+  border-radius: 7px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08); /* zoom suave */
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
+}
+
+.artistas-icon {
   display: flex;
   justify-content: space-between; /* ou space-around/space-evenly */
-  gap: 20px;                      /* espaço entre as caixinhas */
-  flex-wrap: wrap;                /* permite quebrar em telas menores */
-  
+  gap: 20px; /* espaço entre as caixinhas */
+  flex-wrap: wrap; /* permite quebrar em telas menores */
 }
 
-.singles{
+.singles {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 20px;
