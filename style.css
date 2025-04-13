@@ -248,25 +248,47 @@ aside h3 {
   padding: 0 10px; /* opcional: espaçamento interno nas laterais */
 }
 
-.artistas-mostrar h2 {
+.artistas-mostrar h5 {
+  padding-bottom: 30px;
   margin-top: 0;
 }
 
 .artistas-mostrar h3 {
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   font-size: 23px;
 }
 
 .aespa {
-  width: 170px;
+  width: 166px;
   height: 220px;
   border-radius: 10px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease,
-    transform 0.3s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+
+.aespa h3 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+}
+
+.aespa p {
+  color: rgb(165, 159, 159);
+  font-size: 15px;
+  padding-left: 7px;
+}
+
+.aespa-inicial {
+  width: 150px; /* ou o tamanho que quiser */
+  height: 150px;
+  padding-left: 7px;
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  transform-origin: center center; /* preenche sem distorcer */
 }
 
 .aespa:hover {
@@ -279,32 +301,12 @@ aside h3 {
   background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
-.aespa h3 {
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-.aespa p {
-  color: rgb(165, 159, 159);
-  font-size: 15px;
-}
-
-.aespa-inicial {
-  width: 150px; /* ou o tamanho que quiser */
-  height: 150px;
-  border-radius: 50%; /* deixa redonda */
-  object-fit: cover;
-  object-fit: cover;
-  transition: transform 0.1s ease;
-  transform-origin: center center; /* preenche sem distorcer */
-}
-
 .tommy {
-  width: 170px;
+  width: 166px;
   height: 220px; /* altura fixa pra não variar */
   background-color: var(--cor3);
   border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -322,28 +324,30 @@ aside h3 {
 .tommy h3 {
   padding-top: 5px;
   padding-bottom: 10px;
+  padding-left: 7px;
 }
 
 .tommy p {
   color: rgb(165, 159, 159);
   font-size: 15px;
+  padding-left: 7px;
 }
 
 .tommy-inicial {
   width: 150px; /* ou o tamanho que quiser */
   height: 150px;
+  padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
-  object-fit: cover;
   object-fit: cover;
   transition: transform 0.1s ease;
   transform-origin: center center;
 }
 
 .pastel-ghost {
-  width: 170px;
+  width: 166px;
   height: 220px; /* altura fixa pra não variar */
   border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -351,16 +355,19 @@ aside h3 {
 .pastel-ghost h3 {
   padding-top: 5px;
   padding-bottom: 10px;
+  padding-left: 7px;
 }
 
 .pastel-ghost p {
   color: rgb(165, 159, 159);
   font-size: 15px;
+  padding-left: 7px;
 }
 
 .pastel-inicial {
   width: 150px; /* ou o tamanho que quiser */
   height: 150px;
+  padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
   object-fit: cover;
 }
@@ -376,10 +383,10 @@ aside h3 {
 }
 
 .j-eskine {
-  width: 170px;
+  width: 166px;
   height: 220px; /* altura fixa pra não variar */
   border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -387,16 +394,19 @@ aside h3 {
 .j-eskine h3 {
   padding-top: 5px;
   padding-bottom: 10px;
+  padding-left: 7px;
 }
 
 .j-eskine p {
   color: rgb(165, 159, 159);
   font-size: 15px;
+  padding-left: 7px;
 }
 
 .jeskine-inicial {
   width: 150px; /* ou o tamanho que quiser */
   height: 150px;
+  padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
   object-fit: cover;
 }
@@ -412,10 +422,10 @@ aside h3 {
 }
 
 .tate-mcrae {
-  width: 170px;
+  width: 166px;
   height: 220px; /* altura fixa pra não variar */
   border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -423,16 +433,19 @@ aside h3 {
 .tate-mcrae h3 {
   padding-top: 5px;
   padding-bottom: 10px;
+  padding-left: 7px;
 }
 
 .tate-mcrae p {
   color: rgb(165, 159, 159);
   font-size: 15px;
+  padding-left: 7px;
 }
 
 .tate-inicial {
-  width: 150px; /* ou o tamanho que quiser */
-  height: 150px;
+  width: 152px; /* ou o tamanho que quiser */
+  height: 152px;
+  padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
   object-fit: cover;
 }
@@ -450,12 +463,12 @@ aside h3 {
 .artistas-icon {
   display: flex;
   justify-content: space-between; /* ou space-around/space-evenly */
-  gap: 20px; /* espaço entre as caixinhas */
+  gap: 11px; /* espaço entre as caixinhas */
   flex-wrap: wrap; /* permite quebrar em telas menores */
 }
 
 .singles {
-  padding-top: 15px;
+  padding-top: 13px;
   padding-bottom: 15px;
   font-size: 20px;
 }
