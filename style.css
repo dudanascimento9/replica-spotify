@@ -260,7 +260,7 @@ aside h3 {
 
 .aespa {
   width: 166px;
-  height: 220px;
+  height: 217px;
   border-radius: 10px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
@@ -271,7 +271,7 @@ aside h3 {
 
 .aespa h3 {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 7px;
 }
 
@@ -292,13 +292,9 @@ aside h3 {
 }
 
 .aespa:hover {
-  border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
-  cursor: pointer;
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
   transform: scale(1.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.08); /* zoom suave */
-  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
 .tommy {
@@ -312,18 +308,14 @@ aside h3 {
 }
 
 .tommy:hover {
-  border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
-  cursor: pointer;
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
   transform: scale(1.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.08); /* zoom suave */
-  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
 .tommy h3 {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 7px;
 }
 
@@ -339,8 +331,8 @@ aside h3 {
   padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
   object-fit: cover;
-  transition: transform 0.1s ease;
   transform-origin: center center;
+  transition: transform 0.3s ease;
 }
 
 .pastel-ghost {
@@ -354,7 +346,7 @@ aside h3 {
 
 .pastel-ghost h3 {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 7px;
 }
 
@@ -370,16 +362,13 @@ aside h3 {
   padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .pastel-ghost:hover {
-  border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
-  cursor: pointer;
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
   transform: scale(1.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.08); /* zoom suave */
-  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
 .j-eskine {
@@ -393,7 +382,7 @@ aside h3 {
 
 .j-eskine h3 {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 7px;
 }
 
@@ -409,16 +398,13 @@ aside h3 {
   padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .j-eskine:hover {
-  border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
-  cursor: pointer;
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
   transform: scale(1.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.08); /* zoom suave */
-  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
 .tate-mcrae {
@@ -432,7 +418,7 @@ aside h3 {
 
 .tate-mcrae h3 {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 7px;
 }
 
@@ -448,16 +434,13 @@ aside h3 {
   padding-left: 7px;
   border-radius: 50%; /* deixa redonda */
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .tate-mcrae:hover {
-  border-radius: 7px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease;
-  cursor: pointer;
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
   transform: scale(1.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.08); /* zoom suave */
-  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
 }
 
 .artistas-icon {
@@ -468,7 +451,115 @@ aside h3 {
 }
 
 .singles {
-  padding-top: 13px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 8px;
   font-size: 20px;
 }
+
+.singles-albuns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* permite que quebre pra próxima linha se não couber */
+  gap: 10px;
+  margin-top: 0;
+}
+
+.singles-albuns > div {
+  width: 166px;
+  height: 220px;
+  background-color: var(--cor3);
+  border-radius: 10px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.singles-albuns > div:hover {
+  background: linear-gradient(to bottom, var(--cor3), var(--cor2));
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.capa-album {
+  width: 145px;
+  height: 145px;
+  border-radius: 8px; /* levemente arredondado, mas quadrado */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.capa-album-ruby {
+  width: 155px;
+  height: 155px;
+  border-radius: 8px; /* levemente arredondado, mas quadrado */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  padding-right: 5px;
+}
+
+.capa-album-lost{
+  width: 149px;
+  height: 149px;
+  border-radius: 8px; /* levemente arredondado, mas quadrado */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.capa-album-taste{
+  width: 145px;
+  height: 145px;
+  border-radius: 10px; /* levemente arredondado, mas quadrado */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  padding-left: 3px;
+}
+
+.singles-albuns h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.singles-albuns p {
+  font-size: 14px;
+  color: rgb(165, 159, 159);
+}
+
+.info-musica {
+  font-size: 14px;
+  color: rgb(165, 159, 159);
+}
+
+.album-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nota-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .artistas-icon,
+  .singles-albuns {
+    justify-content: center;
+  }
+
+  .singles-albuns > div {
+    width: 45%; /* 2 por linha */
+  }
+}
+
+@media (max-width: 480px) {
+  .singles-albuns,.artistas-icon > div {
+    width: 100%; /* 1 por linha no celular pequeno */
+  }
+}
+
