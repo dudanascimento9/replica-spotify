@@ -20,6 +20,11 @@ body {
   font-weight: bold;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 .logo-nome {
   display: flex;
   align-items: center;
@@ -487,7 +492,7 @@ aside h3 {
 .capa-album {
   width: 145px;
   height: 145px;
-  border-radius: 8px; /* levemente arredondado, mas quadrado */
+  border-radius: 2px; /* levemente arredondado, mas quadrado */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -495,7 +500,7 @@ aside h3 {
 .capa-album-ruby {
   width: 155px;
   height: 155px;
-  border-radius: 8px; /* levemente arredondado, mas quadrado */
+  border-radius: 2px; /* levemente arredondado, mas quadrado */
   object-fit: cover;
   transition: transform 0.3s ease;
   padding-right: 5px;
@@ -504,7 +509,7 @@ aside h3 {
 .capa-album-lost{
   width: 149px;
   height: 149px;
-  border-radius: 8px; /* levemente arredondado, mas quadrado */
+  border-radius: 2px; /* levemente arredondado, mas quadrado */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -512,14 +517,14 @@ aside h3 {
 .capa-album-taste{
   width: 145px;
   height: 145px;
-  border-radius: 10px; /* levemente arredondado, mas quadrado */
+  border-radius: 2px; /* levemente arredondado, mas quadrado */
   object-fit: cover;
   transition: transform 0.3s ease;
   padding-left: 3px;
 }
 
 .singles-albuns h3 {
-  margin-top: 10px;
+  margin-top: 3px;
   margin-bottom: 0px;
   color: white;
 }
