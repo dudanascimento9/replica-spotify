@@ -121,7 +121,7 @@
   
   aside {
     background-color: var(--cor0);
-    width: 30%;
+    width: 42%;
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -238,18 +238,80 @@
 
   .aespa {
     background-color: var(--cor3);
-    border-radius: 20px; /* Bordas arredondadas */ /* Largura fixa opcional */
-    width: 70%;
+    border-radius: 10px; /* Bordas arredondadas */ /* Largura fixa opcional */
+    width: 58%;
     color: white;
     box-sizing: border-box;
     border-radius: 10px;
+    align-items: center;
+  }
+
+  .header-artista {
+    position: relative; /* para a info-artista se posicionar em cima da imagem */
+    width: 100%;
   }
 
   .aespa-header {
-   
-        width: 100%;
-        height: 500px; /* altura fixa */
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-        display: block;
+    background-image: url("imagens/aespa-header4.jpg");
+    filter: brightness(70%);
+    background-size: cover;
+    background-position: center;
+    width: 775px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .info-artista {
+    position: absolute;
+    top: 50%;          /* meio vertical */
+    left: 30px;        /* afastado da borda esquerda */
+    transform: translateY(-50%); /* centraliza certinho no meio vertical */
+    color: white;
+  }
+
+  .verificado {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+  
+  
+  .icon-verificado {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-artista h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  .info-artista p{
+    font-weight: normal;
+  }
+  
+  .debaixo-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .debaixo-header img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .debaixo-header button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
   }
