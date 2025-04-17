@@ -457,7 +457,7 @@
       right: 20px;
       background-color: #121212;
       border: 1px solid #333;
-      padding: 10px 15px;
+      padding: 3px 15px;
       border-radius: 12px;
       display: flex;
       align-items: center;
@@ -485,6 +485,12 @@
     #player-title {
       font-size: 14px;
       font-weight: bold;
+      margin: 0;
+    }
+
+    #player-nome{
+      font-size: 12px;
+      font-weight: normal;
       margin: 0;
     }
     
