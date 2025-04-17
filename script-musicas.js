@@ -1,37 +1,102 @@
 const musicas = [
-  {
-    audioId: "audio-musica",
-    divClass: "alinhar",
-  },
-  {
-    audioId: "audio-musica2",
-    divClass: "alinhar2",
-  },
-  {
-    audioId: "audio-musica3",
-    divClass: "alinhar3",
-  },
-];
-
-const audios = musicas.map((m) => document.getElementById(m.audioId));
-
-musicas.forEach((musica, index) => {
-  const div = document.querySelector(`.${musica.divClass}`);
-  const audio = audios[index];
-
-  if (div && audio) {
-    div.addEventListener("click", () => {
-      // Pausar todos os outros
-      audios.forEach((a, i) => {
-        if (i !== index) a.pause();
-      });
-
-      // Play/Pause a clicada
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    });
+    {
+      audioId: "audio-musica",
+      divClass: "alinhar",
+      titulo: "Whiplash",
+      capa: "imagens/whiplash-icon.jpg",
+    },
+    {
+      audioId: "audio-musica2",
+      divClass: "alinhar2",
+      titulo: "Supernova",
+      capa: "imagens/armageddon-icon.jpg",
+    },
+    {
+      audioId: "audio-musica3",
+      divClass: "alinhar3",
+      titulo: "UP - KARINA Solo",
+      capa: "imagens/up-icon.jpg",
+    },
+  ];
+  
+  let audioAtual = null;
+  let tocando = false;
+  
+  // Atualiza o conteúdo do player fixo
+  function atualizarPlayer(titulo, capa, audio) {
+    document.getElementById("player-title").textContent = titulo;
+    document.getElementById("player-cover").src = capa;
+    audioAtual = audio;
+    tocarOuPausarPlayer(true); // Auto inicia a música
   }
-});
+  
+  // Dá play ou pausa na música atual
+  function tocarOuPausarPlayer(autoStart = false) {
+    if (!audioAtual) return;
+  
+    if (audioAtual.paused || autoStart) {
+      // Pausa todas as outras
+      document.querySelectorAll("audio").forEach((a) => {
+        if (a !== audioAtual) a.pause();
+      });
+      audioAtual.play();
+      tocando = true;
+    } else {
+      audioAtual.pause();
+      tocando = false;
+    }
+  }
+  
+  // Voltar para o início da música
+  function voltarParaInicio() {
+    if (audioAtual) {
+      audioAtual.currentTime = 0;
+    }
+  }
+  
+  // Avançar até o final da música
+  function avancarParaFinal() {
+    if (audioAtual) {
+      audioAtual.currentTime = audioAtual.duration;
+      audioAtual.pause();
+      tocando = false;
+    }
+  }
+  
+  // Configura os eventos de clique nas divs
+  musicas.forEach((musica) => {
+    const div = document.querySelector(`.${musica.divClass}`);
+    const audio = document.getElementById(musica.audioId);
+  
+    if (div && audio) {
+      div.addEventListener("click", () => {
+        atualizarPlayer(musica.titulo, musica.capa, audio);
+      });
+    }
+
+    const progressBar = document.getElementById("progressBar");
+const progressContainer = document.querySelector(".progress-container");
+
+// Atualiza a barra enquanto a música toca
+function atualizarBarra() {
+  if (audioAtual) {
+    const porcentagem = (audioAtual.currentTime / audioAtual.duration) * 100;
+    progressBar.style.width = `${porcentagem}%`;
+  }
+}
+
+// Atualiza a barra constantemente
+setInterval(atualizarBarra, 500);
+
+// Permite clicar na barra para mudar o tempo
+function mudarTempo(e) {
+  if (!audioAtual) return;
+
+  const largura = progressContainer.clientWidth;
+  const cliqueX = e.offsetX;
+  const duracao = audioAtual.duration;
+
+  audioAtual.currentTime = (cliqueX / largura) * duracao;
+}
+  });
+  

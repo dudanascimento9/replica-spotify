@@ -98,8 +98,6 @@
                         <p class="tit-w">Whiplash</p>
                         <p style="font-weight: normal; font-size: 15px;">203.677.790 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3:03</p>
                   </div>
-          
-                  <audio id="audio-musica" src="musicas/aespa/aespa 에스파 'Whiplash' MV.mp3"></audio>
 
                   
                   <div class="alinhar2">
@@ -109,9 +107,6 @@
                     <p style="font-weight: normal; font-size: 15px;">288.335.127 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:58</p>
                   </div>
 
-                  <audio id="audio-musica2" src="musicas/aespa/Supernova - aespa (Audio).mp3">
-                  </audio>
-
                   <div class="alinhar3">
                     <p>3 </p> 
                     <img src="imagens/up-icon.jpg" class="up-icon" alt="up"> 
@@ -119,12 +114,33 @@
                     <p style="font-weight: normal; font-size: 15px;">113.429.389 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:46</p>
                   </div>
 
-                  <audio id="audio-musica3" src="musicas/aespa/UP (KARINA Solo).mp3"></audio>
-
-                  
                 </div>
               </div>
           </div>
-          <script src="script-musicas.js" defer></script>
+          
+          <audio id="audio-musica" src="musicas/aespa/aespa 에스파 'Whiplash' MV.mp3"></audio>
+          <audio id="audio-musica2" src="musicas/aespa/Supernova - aespa (Audio).mp3"></audio>
+          <audio id="audio-musica3" src="musicas/aespa/UP (KARINA Solo).mp3"></audio>
+          
+          <div class="music-player">
+            <div class="player-info">
+              <img id="player-cover" src="imagens/whiplash-icon.jpg" alt="Capa da música">
+              <div class="player-text">
+                <p id="player-title">Whiplash</p>
+              </div>
+            </div>
+            <div class="player-controls">
+              <button onclick="voltarParaInicio()">⏮️</button>
+              <button onclick="tocarOuPausarPlayer()">⏯️</button>
+              <button onclick="avancarParaFinal()">⏭️</button>
+            </div>
+            
+            <div class="progress-container" onclick="mudarTempo(event)">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+          </div>
+          
+        <script src="script-musicas.js" defer></script>
 </body>
 </html>
