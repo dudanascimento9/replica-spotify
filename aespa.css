@@ -59,7 +59,7 @@
     flex-direction: row;
     padding-top: 10px;
     padding-bottom: 13px;
-    padding-right: 230px;
+    padding-right: 238px;
     border-radius: 20px; /* Bordas arredondadas */
     color: white; /* Cor do texto, se o fundo for escuro */
     gap: 8px;
@@ -99,7 +99,7 @@
   }
   
   nav button {
-    margin-left: 10px;
+    margin-left: 7px;
     padding: 8px 12px;
     border: none;
     border-radius: 20px;
@@ -275,7 +275,7 @@
     filter: brightness(70%);
     background-size: cover;
     background-position: center;
-    width: 775px;
+    width: 779px;
     height: 280px;
     border-radius: 10px 10px 0 0;
   }
@@ -317,7 +317,7 @@
     align-items: center;
     gap: 10px;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
   }
   
   .replay {
@@ -361,18 +361,19 @@
     }
   
     .musicas img{
-      width: 35px;
-      height: 35px;
+      width: 37px;
+      height: 37px;
       border-radius: 5px;
     }
 
     .alinhar{
       display: inline-flex;
       align-items: center;
+      cursor: pointer;
       gap: 10px;
       padding: 6px 8px 6px 20px;
       border-radius: 2px;
-    transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
     }
 
     .alinhar:hover{
@@ -383,15 +384,50 @@
 
     }
 
-    .whiplash #um{
+    .alinhar2{
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      padding: 6px 8px 6px 20px;
+      border-radius: 2px;
+      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+    }
+
+    .alinhar2:hover{
+      background: var(--cor3);
+      transform: scale(1.08);
+      padding-right: 30px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .alinhar3{
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      padding: 6px 8px 6px 20px;
+      border-radius: 2px;
+      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+    }
+
+    .alinhar3:hover{
+      background: var(--cor3);
+      transform: scale(1.08);
+      padding-right: 30px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .alinhar #um{
+      margin-left: 2px;
       font-size: 18px;
     }
 
-    .whiplash img {
-      width: 35px;
-      height: 35px;
+    .whip-icon {
+      width: 37px;
+      height: 37px;
       border-radius: 5px;
-      vertical-align: top; /* alinha o topo da imagem com o topo do texto */
+       /* alinha o topo da imagem com o topo do texto */
     }
 
     .tit-w{
@@ -406,6 +442,16 @@
       margin-right: 50px;
     }
 
+    .musica {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    
     
 
 
