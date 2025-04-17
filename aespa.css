@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+
+@font-face {
+  font-family: "sweet-sans";
+  src: url("fontes/sweet-sans-pro/SweetSansProLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "sweet-sans-bold";
+  src: url("fontes/sweet-sans-pro/SweetSansProBold.otf") format("opentype");
+}
+
 :root {
     --cor0: rgb(22, 20, 20);
     --cor1: #353c3d;
@@ -16,7 +27,7 @@
   body {
     background-color: rgb(0, 0, 0);
     color: white;
-    font-family: var(--fonte-padrao);
+    font-family: sweet-sans;
     font-weight: bold;
   }
   
@@ -239,7 +250,15 @@
   .aespa {
     background-color: var(--cor3);
     border-radius: 10px; /* Bordas arredondadas */ /* Largura fixa opcional */
+    
+    background:
+    linear-gradient(to top, transparent 10%,rgb(124, 124, 124) 130%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
     width: 58%;
+    height: 100%;
     color: white;
     box-sizing: border-box;
     border-radius: 10px;
@@ -257,7 +276,7 @@
     background-size: cover;
     background-position: center;
     width: 775px;
-    height: 300px;
+    height: 280px;
     border-radius: 10px 10px 0 0;
   }
 
@@ -273,11 +292,9 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    padding-top: 20px;
-    margin-bottom: 40px;
+    padding-top: 80px;
     margin-left: 0;
   }
-  
   
   .icon-verificado {
     width: 40px;
@@ -285,8 +302,10 @@
   }
 
   .info-artista h1{
-    font-size: 50px;
-    margin-bottom: 50px;
+    font-size: 70px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+   
   }
 
   .info-artista p{
@@ -296,18 +315,27 @@
   .debaixo-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
   }
   
-  .debaixo-header img {
-    width: 30px;
-    height: 30px;
+  .replay {
+    width: 35px;
+    height: 35px;
     cursor: pointer;
+  }
+
+  .play{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
   }
   
   .debaixo-header button {
-    background-color: #1db954;
+    background-color:var(--cor3);
+    box-shadow: 0 0 0 1px white;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -315,3 +343,72 @@
     cursor: pointer;
     font-weight: bold;
   }
+
+  .pontos{
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+
+    .popular{
+      margin-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    .musicas{
+      margin-left: 25px;
+      gap: 0;
+    }
+  
+    .musicas img{
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+    }
+
+    .alinhar{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 8px 6px 20px;
+      border-radius: 2px;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+    }
+
+    .alinhar:hover{
+      background: var(--cor3);
+      transform: scale(1.08);
+      padding-right: 30px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .whiplash #um{
+      font-size: 18px;
+    }
+
+    .whiplash img {
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+      vertical-align: top; /* alinha o topo da imagem com o topo do texto */
+    }
+
+    .tit-w{
+      margin-right: 126px;
+    }
+
+    .tit-s{
+      margin-right: 110px;
+    }
+
+    .tit-u{
+      margin-right: 50px;
+    }
+
+    
+
+
+
+
+  
