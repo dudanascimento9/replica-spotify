@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Richman</title>
+    <link rel="stylesheet" href="tommy.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="fundo-grande">
+        <nav>
+          <div class="logo-nome">
+            <a href="index.html"
+              ><img
+                src="imagens/Spotify_Primary_Logo_RGB_White.png"
+                class="logo"
+                alt="logo do spotify"
+            /></a>
+            <h1 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Spotify</h1>
+          </div>
+  
+          <div class="topo-ouvir">
+            <img
+              src="imagens/lupa (2).png"
+              alt="Ícone de lupa"
+              class="icone-lupa"
+            />
+            <h4>O que você quer ouvir?</h4>
+          </div>
+  
+          <div class="botoes">
+            <button class="inscrever">Inscreva-se</button>
+            <button class="entrar">Entrar</button>
+          </div>
+        </nav>
+  
+        <div class="container">
+          <aside>
+            <div class="titulo-biblioteca">
+              <img
+                src="imagens/bibliotify.png"
+                alt="Ícone da biblioteca"
+                class="icone-biblioteca"
+              />
+              <h3>Sua biblioteca</h3>
+              <span class="botao-mais">+</span>
+            </div>
+  
+            <div class="fundo-playlist">
+              <h4>Crie sua primeira playlist</h4>
+              <p style="color: rgb(223, 218, 215)">É fácil, vamos te ajudar!</p>
+              <div class="playlist">
+                <button class="criar-playlist">Criar playlist</button>
+              </div>
+            </div>
+  
+            <div class="fundo-podcast">
+              <h4>Que tal seguir um podcast novo?</h4>
+              <p style="color: rgb(223, 218, 215)">
+                Avisaremos você sobre novos episódios
+              </p>
+              <div class="podcast">
+                <button class="criar-podcast">Explore podcasts</button>
+              </div>
+            </div>
+          </aside>
+          
+          <div class="tommy">
+            <header class="header-artista">
+              <div class="tommy-header"></div>
+            
+              <div class="info-artista">
+                <div class="verificado">
+                  <img src="imagens/verificado.png" alt="verificado" class="icon-verificado">
+                  <p style="font-weight: bold;">Artista verificado</p>
+                </div>
+            
+                <h1 style="font-family: var(--fonte-padrao);">Tommy Richman</h1>
+                <p style="font-weight: bold;">19.066.664 ouvintes mensais</p>
+              </div>
+            </header>
+
+            <div class="debaixo-header">
+              <a href="#"><img src="imagens/play.png" class="play" alt="play"></a>
+              <img src="imagens/replay.png" class="replay" alt="replay">
+              <button>Seguir</button>
+              <img src="imagens/Adobe Express - file (1).png" class="pontos" alt="3 pontinhos">
+            </div>
+
+
+              <div class="populares">
+                <h3 class="popular" style="font-family: sweet-sans-bold;">Populares</h3>
+                
+                <div class="musicas">
+                  <div class="alinhar">
+                        <p id="um">1</p>
+                        <img src="imagens/million-icon.jpg" class="million-icon" alt="million dollar baby">
+                        <p class="tit-m">MILLION DOLLAR BABY</p>
+                        <p style="font-weight: normal; font-size: 15px;">203.677.790 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:35</p>
+                  </div>
+
+                  
+                  <div class="alinhar2">
+                    <p id="dois">2</p> 
+                    <img src="imagens/devil-icon.jpg"  alt="devil is a lie"> 
+                    <p class="tit-d">DEVIL IS A LIE</p> 
+                    <p style="font-weight: normal; font-size: 15px;">288.335.127 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:10</p>
+                  </div>
+
+                  <div class="alinhar3">
+                    <p>3 </p> 
+                    <img src="imagens/actin-icon.jpg"  alt="actin up"> 
+                    <p class="tit-a">ACTIN UP</p> 
+                    <p style="font-weight: normal; font-size: 15px;">113.429.389 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:13</p>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+          
+          <audio id="audio-musica" src="musicas/tommy/Tommy Richman - MILLION DOLLAR BABY (Official Visualizer).mp3"></audio>
+          <audio id="audio-musica2" src="musicas/tommy/Tommy Richman - DEVIL IS A LIE.mp3"></audio>
+          <audio id="audio-musica3" src="musicas/tommy/Tommy Richman - ACTIN UP (Official Visualizer).mp3"></audio>
+          
+          <div class="music-player">
+            <div class="player-info">
+              <img id="player-cover" src="imagens/million-icon.jpg" alt="Capa da música">
+              <div class="player-text">
+                <p id="player-title">MILLION DOLLAR BABY</p>
+                <p id="player-nome">Tommy Richman</p>
+              </div>
+            </div>
+            <div class="player-controls">
+              <button onclick="voltarParaInicio()">⏮️</button>
+              <button onclick="tocarOuPausarPlayer()">⏯️</button>
+              <button onclick="avancarParaFinal()">⏭️</button>
+            </div>
+            
+            <div class="progress-container" onclick="mudarTempo(event)">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+          </div>
+          
+        <script src="script-musicas2.js" defer></script>
+</body>
+</html>
