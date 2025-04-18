@@ -132,7 +132,7 @@
   
   aside {
     background-color: var(--cor0);
-    width: 40%;
+    width: 30%;
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -257,7 +257,7 @@
     background-repeat: no-repeat;
     background-position: top;
     
-    width: 60%;
+    width: 70%;
     height: 100%;
     color: white;
     box-sizing: border-box;
@@ -271,11 +271,11 @@
   }
 
   .aespa-header {
-    background-image: url("imagens/aespa-header4.jpg");
+    background-image: url("imagens/aespa-header7.jpg");
     filter: brightness(70%);
     background-size: cover;
     background-position: center;
-    width: 779px;
+    width: 941px;
     height: 280px;
     border-radius: 10px 10px 0 0;
   }
