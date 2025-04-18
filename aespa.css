@@ -132,7 +132,7 @@
   
   aside {
     background-color: var(--cor0);
-    width: 42%;
+    width: 40%;
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -257,7 +257,7 @@
     background-repeat: no-repeat;
     background-position: top;
     
-    width: 58%;
+    width: 60%;
     height: 100%;
     color: white;
     box-sizing: border-box;
