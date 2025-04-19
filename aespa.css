@@ -344,6 +344,12 @@
     font-weight: bold;
   }
 
+  .botao-seguir.seguindo {
+    background-color: white;   /* ou a cor que você quiser */
+    color: black;
+    border: 1px solid white;
+  }
+  
   .pontos{
       width: 35px;
       height: 35px;

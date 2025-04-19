@@ -343,6 +343,12 @@
     font-weight: bold;
   }
 
+  .botao-seguir.seguindo {
+    background-color: white;   /* ou a cor que você quiser */
+    color: black;
+    border: 1px solid white;
+  }
+
   .pontos{
     width: 35px;
     height: 35px;
@@ -439,12 +445,12 @@
   }
 
   .tit-r{
-    margin-right: 80px;
+    margin-right: 75px;
     white-space: nowrap;
   }
 
   .tit-e{
-    margin-right: 100px;
+    margin-right: 105px;
     white-space: nowrap;
   }
 

@@ -98,5 +98,17 @@ function mudarTempo(e) {
 
   audioAtual.currentTime = (cliqueX / largura) * duracao;
 }
+
+const botao = document.getElementById("btn-seguir");
+
+  botao.addEventListener("click", function () {
+    botao.classList.toggle("seguindo");
+
+    if (botao.classList.contains("seguindo")) {
+      botao.textContent = "Seguindo";
+    } else {
+      botao.textContent = "Seguir";
+    }
+  });
   });
   
