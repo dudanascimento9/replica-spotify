@@ -265,13 +265,14 @@ aside h3 {
 
 .aespa {
   width: 166px;
-  height: 217px;
+  height: 210px;
   border-radius: 10px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
 }
 
 .aespa h3 {
@@ -304,7 +305,7 @@ aside h3 {
 
 .tommy {
   width: 166px;
-  height: 220px; /* altura fixa pra não variar */
+  height: 210px; /* altura fixa pra não variar */
   background-color: var(--cor3);
   border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
@@ -342,7 +343,7 @@ aside h3 {
 
 .pastel-ghost {
   width: 166px;
-  height: 220px; /* altura fixa pra não variar */
+  height: 210px; /* altura fixa pra não variar */
   border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
@@ -378,7 +379,7 @@ aside h3 {
 
 .j-eskine {
   width: 166px;
-  height: 220px; /* altura fixa pra não variar */
+  height: 210px; /* altura fixa pra não variar */
   border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
@@ -414,7 +415,7 @@ aside h3 {
 
 .tate-mcrae {
   width: 166px;
-  height: 220px; /* altura fixa pra não variar */
+  height: 210px; /* altura fixa pra não variar */
   border-radius: 7px;
   transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
   cursor: pointer;
