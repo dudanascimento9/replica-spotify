@@ -363,7 +363,7 @@
 
     .musicas{
       margin-left: 25px;
-      gap: 0;
+     
     }
   
     .musicas img{
@@ -424,6 +424,42 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
+    .alinhar4{
+      width: 530px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      padding: 6px 8px 6px 20px;
+      border-radius: 2px;
+      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+    }
+
+    .alinhar4:hover{
+      background: var(--cor3);
+      transform: scale(1.08);
+      padding-right: 30px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .alinhar5{
+      width: 530px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      padding: 6px 8px 6px 20px;
+      border-radius: 2px;
+      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+    }
+
+    .alinhar5:hover{
+      background: var(--cor3);
+      transform: scale(1.08);
+      padding-right: 30px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
     .alinhar #um{
       margin-left: 2px;
       font-size: 18px;
@@ -437,15 +473,23 @@
     }
 
     .tit-w{
-      margin-right: 126px;
+      margin-right: 190px;
     }
 
     .tit-s{
-      margin-right: 110px;
+      margin-right: 180px;
     }
 
     .tit-u{
-      margin-right: 50px;
+      margin-right: 121px;
+    }
+
+    .tit-a{
+      margin-right: 166px;
+    }
+
+    .tit-d{
+      margin-right: 215px;
     }
 
     .musica {
@@ -456,6 +500,12 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
+
+    .sobre{
+
+    }
+
+   
 
     .music-player {
       position: fixed;
@@ -525,6 +575,8 @@
       border-radius: 5px;
       transition: width 0.2s linear;
     }
+    
+
     
     
     

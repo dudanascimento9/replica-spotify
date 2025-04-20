@@ -17,6 +17,18 @@ const musicas = [
     titulo: "UP - KARINA Solo",
     capa: "imagens/up-icon.jpg",
   },
+  {
+    audioId: "audio-musica4",
+    divClass: "alinhar4",
+    titulo: "Armageddon",
+    capa: "imagens/armageddon-icon.jpg",
+  },
+  {
+    audioId: "audio-musica5",
+    divClass: "alinhar5",
+    titulo: "Drama",
+    capa: "imagens/drama.jpg",
+  },
 ];
 
 let audioAtual = null;
