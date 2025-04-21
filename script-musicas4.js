@@ -17,6 +17,19 @@ const musicas = [
     titulo: "Resenha Ex-Love",
     capa: "imagens/ex-love.jpg",
   },
+  {
+    audioId: "audio-musica4",
+    divClass: "alinhar4",
+    titulo: "Resenha do Arrocha 3.0",
+    capa: "imagens/ex-love.jpg",
+  },
+
+  {
+    audioId: "audio-musica5",
+    divClass: "alinhar5",
+    titulo: "Tadala",
+    capa: "imagens/download.jpeg",
+  },
 ];
 
 let audioAtual = null;

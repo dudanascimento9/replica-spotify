@@ -17,6 +17,20 @@ const musicas = [
     titulo: "ACTIN UP",
     capa: "imagens/actin-icon.jpg",
   },
+
+  {
+    audioId: "audio-musica4",
+    divClass: "alinhar4",
+    titulo: "Upset",
+    capa: "imagens/upset.jpg",
+  },
+
+  {
+    audioId: "audio-musica5",
+    divClass: "alinhar5",
+    titulo: "BUNKER/PREROLL",
+    capa: "imagens/bunker.jpeg",
+  },  
 ];
 
 let audioAtual = null;

@@ -17,6 +17,20 @@ const musicas = [
     titulo: "Embrace",
     capa: "imagens/abyss.jpg",
   },
+
+  {
+    audioId: "audio-musica4",
+    divClass: "alinhar4",
+    titulo: "Shadows",
+    capa: "imagens/abyss.jpg",
+  },
+
+  {
+    audioId: "audio-musica5",
+    divClass: "alinhar5",
+    titulo: "Silhouette",
+    capa: "imagens/sillhou.jpg",
+  },
 ];
 
 let audioAtual = null;

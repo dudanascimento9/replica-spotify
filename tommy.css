@@ -374,7 +374,7 @@
     }
 
     .alinhar{
-      width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+      width: 530px; /* ou qualquer valor que funcione bem no seu layout */
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -393,7 +393,7 @@
     }
 
     .alinhar2{
-        width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+        width: 530px; /* ou qualquer valor que funcione bem no seu layout */
         display: flex;
       align-items: center;
       cursor: pointer;
@@ -411,7 +411,7 @@
     }
 
     .alinhar3{
-      width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+      width: 530px; /* ou qualquer valor que funcione bem no seu layout */
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -446,6 +446,24 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
+    .alinhar5{
+      width: 530px; /* ou qualquer valor que funcione bem no seu layout */
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      padding: 6px 8px 6px 20px;
+      border-radius: 2px;
+      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+    }
+
+    .alinhar5:hover{
+      background: var(--cor3);
+      transform: scale(1.08);
+      padding-right: 20px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
     .alinhar #um{
       margin-left: 2px;
       font-size: 18px;
@@ -459,22 +477,26 @@
     }
 
     .tit-m{
-      margin-right: 35px;
+      margin-right: 75px;
     }
 
     .tit-d{
-      margin-right: 116px;
+      margin-right: 160px;
     }
 
     .tit-a{
-      margin-right: 162px;
+      margin-right: 209px;
     }
 
     .tit-u{
-      margin-right: 25px;
+      margin-right: 50px;
       white-space: nowrap;        /* Não quebra a linha */
       overflow: hidden;           /* Esconde o que passar da caixa */
       text-overflow: ellipsis; 
+    }
+
+    .tit-b{
+      margin-right: 120px;
     }
    
     .musica {

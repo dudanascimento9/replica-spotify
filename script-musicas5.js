@@ -17,10 +17,23 @@ const musicas = [
       titulo: "Greedy",
       capa: "imagens/greedy.jpg",
     },
+
+    {
+      audioId: "audio-musica4",
+      divClass: "alinhar4",
+      titulo: "It's ok I'm ok",
+      capa: "imagens/so-close.jpg",
+    },
+    {
+      audioId: "audio-musica5",
+      divClass: "alinhar5",
+      titulo: "I know love (feat. The KID LAROI)",
+      capa: "imagens/so-close.jpg",
+    },
   ];
   
   let audioAtual = null;
-let tocando = false;
+  let tocando = false;
 
 // Atualiza o conteúdo do player fixo
 function atualizarPlayer(titulo, capa, audio) {
