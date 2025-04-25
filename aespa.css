@@ -576,6 +576,48 @@
       transition: width 0.2s linear;
     }
     
+    .sobre-hdois{
+      font-family: Arial;
+      font-weight: bold;
+      margin-top: 100px;
+    }
+    
+    .sobre-artista {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      border-radius: 12px;
+      margin-top: 0;
+      gap: 20px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .aespa-sobre {
+      background-image: url("imagens/sobre-aespa1.jpg");
+      filter: brightness(100%);
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      width: 100%;
+      height: 250px;
+      position: relative;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+    }
+    
+    
+    .aespa-sobre h2,
+    .aespa-sobre .info-extra,
+    .aespa-sobre .bio {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 10px;
+    }
 
     
     
