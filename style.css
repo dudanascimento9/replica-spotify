@@ -290,6 +290,8 @@ aside h3 {
 .artistas-mostrar h5 {
   padding-bottom: 30px;
   margin-top: 0;
+  color: white;
+  text-decoration: underline;
 }
 
 .artistas-mostrar h3 {

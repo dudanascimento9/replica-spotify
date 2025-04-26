@@ -27,7 +27,7 @@ const musicas = [
     {
       audioId: "audio-musica5",
       divClass: "alinhar5",
-      titulo: "I know love (feat. The KID LAROI)",
+      titulo: "I know love...",
       capa: "imagens/so-close.jpg",
     },
   ];
