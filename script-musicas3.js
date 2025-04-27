@@ -117,27 +117,27 @@ musicas.forEach((musica) => {
 
   const botao = document.getElementById("btn-seguir");
 
-// Verifica o estado salvo ao carregar a página
-const seguindo = localStorage.getItem("seguindoArtista");
+  // Verifica o estado salvo ao carregar a página
+  const seguindo = localStorage.getItem("seguindoArtista");
 
-if (seguindo === "true") {
-  botao.classList.add("seguindo");
-  botao.textContent = "Seguindo";
-} else {
-  botao.classList.remove("seguindo");
-  botao.textContent = "Seguir";
-}
+  if (seguindo === "true") {
+    botao.classList.add("seguindo");
+    botao.textContent = "Seguindo";
+  } else {
+    botao.classList.remove("seguindo");
+    botao.textContent = "Seguir";
+  }
 
-// Evento de clique
-botao.addEventListener("click", function () {
-  botao.classList.toggle("seguindo");
+  // Evento de clique
+  botao.addEventListener("click", function () {
+    botao.classList.toggle("seguindo");
 
-  const estaSeguindo = botao.classList.contains("seguindo");
+    const estaSeguindo = botao.classList.contains("seguindo");
 
-  // Salva o estado no localStorage
-  localStorage.setItem("seguindoArtista", estaSeguindo);
+    // Salva o estado no localStorage
+    localStorage.setItem("seguindoArtista", estaSeguindo);
 
-  // Atualiza o texto do botão
-  botao.textContent = estaSeguindo ? "Seguindo" : "Seguir";
-});
+    // Atualiza o texto do botão
+    botao.textContent = estaSeguindo ? "Seguindo" : "Seguir";
+  });
 });

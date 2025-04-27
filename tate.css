@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 @font-face {
   font-family: "sweet-sans";
   src: url("fontes/sweet-sans-pro/SweetSansProLight.otf") format("opentype");
@@ -12,599 +11,600 @@
 }
 
 :root {
-    --cor0: rgb(22, 20, 20);
-    --cor1: #353c3d;
-    --cor2: #3c3c3c;
-    --cor3:rgb(41, 39, 39);
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-  }
-  
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  body {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-family: sweet-sans;
-    font-weight: bold;
-  }
-  
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  
-  .logo-nome {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  .logo-nome h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .topo-ouvir {
-    display: flex;
-    background-color: var(--cor2);
-    align-items: center;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 13px;
-    padding-right: 238px;
-    border-radius: 20px; /* Bordas arredondadas */
-    color: white; /* Cor do texto, se o fundo for escuro */
-    gap: 8px;
-    font-size: 12px;
-  }
-  
-  .topo-ouvir h4 {
-    color: rgb(223, 218, 215);
-    font-size: 13px;
-  }
-  
-  .icone-lupa {
-    padding-left: 10px;
-    width: 16px; /* tamanho pequeno da lupa */
-    height: 16px;
-    object-fit: contain;
-  }
-  
-  nav {
-    display: flex;
-    align-items: center; /* Alinha verticalmente no centro */
-    justify-content: space-between; /* Espaça os elementos horizontalmente */
-    padding: 10px 20px;
-    color: white;
-    font-weight: bold;
-  }
-  
-  nav img.logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  nav h1,
-  nav h4 {
-    margin: 0 10px;
-  }
-  
-  nav button {
-    margin-left: 7px;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  button.inscrever {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .botoes {
-    display: flex;
-    gap: 10px; /* espaço entre os botões */
-  }
-  
-  .botoes button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-  }
-  
-  .botoes.entrar {
-    background-color: white;
-    font-weight: bold;
-  }
-  
-  aside {
-    background-color: var(--cor0);
-    width: 30%;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-  }
-  
-  .container {
-    display: flex;
-    height: 100vh; /* altura total da tela, opcional */
-    gap: 6px;
-  }
-  
-  aside h3 {
-    padding: 0;
-    margin: 0;
-    color: rgb(240, 238, 237);
-  }
-  
-  .titulo-biblioteca {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* separa o + pro final */
-    gap: 8px;
-    padding: 6px 0 20px 0px; /* top, right, bottom, left */
-  }
-  
-  .titulo-biblioteca h3 {
-    flex: 1;
-    margin: 0;
-  }
-  
-  .botao-mais {
-    font-size: 40px;
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 50%;
-    color: white;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .icone-biblioteca {
-    width: 50px; /* Tamanho pequeno */
-    height: 50px; /* Força a altura igual ao width */
-    object-fit: contain; /* Mantém proporção da imagem */
-  }
-  
-  .playlist button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .criar-playlist {
-    background-color: white;
-    font-weight: bold;
-  }
-  
-  .fundo-playlist {
-    background-color: var(--cor3);
-    border-radius: 10px;
-    margin-top: 15px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    width: 92%;
-  }
-  
-  .fundo-playlist h4 {
-    padding-top: 10px;
-    padding-bottom: 8px;
-  }
-  
-  .fundo-playlist p {
-    font-size: 13px;
-    padding-bottom: 20px;
-  }
-  
-  .fundo-podcast {
-    background-color: var(--cor3);
-    margin-top: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    width: 92%;
-  }
-  
-  .fundo-podcast h4 {
-    padding-top: 10px;
-    padding-bottom: 8px;
-  }
-  
-  .fundo-podcast p {
-    font-size: 13px;
-    padding-bottom: 20px;
-  }
-  
-  .podcast button {
-    padding: 8px 17px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .criar-podcast {
-    background-color: white;
-    font-weight: bold;
-  }
+  --cor0: rgb(22, 20, 20);
+  --cor1: #353c3d;
+  --cor2: #3c3c3c;
+  --cor3: rgb(41, 39, 39);
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
 
-  .tate {
-    background-color: var(--cor3);
-    border-radius: 10px; /* Bordas arredondadas */ /* Largura fixa opcional */
-    background:
-    linear-gradient(to top, transparent 10%,rgb(124, 124, 124) 130%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 70%;
-    height: 100%;
-    color: white;
-    box-sizing: border-box;
-    border-radius: 10px;
-    align-items: center;
-  }
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-  .header-artista {
-    position: relative; /* para a info-artista se posicionar em cima da imagem */
-    width: 100%;
-  }
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: sweet-sans;
+  font-weight: bold;
+}
 
-  .tate-header {
-    background-image: url("imagens/tate-header2.jpg");
-    filter: brightness(85%);
-    background-size: cover;
-    background-position: center;
-    width: 940px;
-    height: 280px;
-    border-radius: 10px 10px 0 0;
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
 
-  .info-artista {
-    position: absolute;
-    top: 50%;          /* meio vertical */
-    left: 30px;        /* afastado da borda esquerda */
-    transform: translateY(-50%); /* centraliza certinho no meio vertical */
-    color: white;
-  }
+.logo-nome {
+  display: flex;
+  align-items: center;
+}
 
-  .verificado {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding-top: 80px;
-    margin-left: 0;
-  }
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
 
-  .icon-verificado {
-    width: 40px;
-    height: 40px;
-  }
+.logo-nome h1 {
+  font-size: 24px;
+  margin: 0;
+}
 
-  .info-artista h1{
-    font-size: 70px;
-    font-weight: bolder;
-    padding-bottom: 20px;
-   
-  }
+.topo-ouvir {
+  display: flex;
+  background-color: var(--cor2);
+  align-items: center;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-right: 238px;
+  border-radius: 20px; /* Bordas arredondadas */
+  color: white; /* Cor do texto, se o fundo for escuro */
+  gap: 8px;
+  font-size: 12px;
+}
 
-  .info-artista p{
-    font-weight: normal;
-  }
+.topo-ouvir h4 {
+  color: rgb(223, 218, 215);
+  font-size: 13px;
+}
 
-  .debaixo-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 12px;
-  }
-  
-  .replay {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-  }
+.icone-lupa {
+  padding-left: 10px;
+  width: 16px; /* tamanho pequeno da lupa */
+  height: 16px;
+  object-fit: contain;
+}
 
-  .play{
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    margin-left: 20px;
-  }
+nav {
+  display: flex;
+  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: space-between; /* Espaça os elementos horizontalmente */
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
 
-  .debaixo-header button {
-    background-color:var(--cor3);
-    box-shadow: 0 0 0 1px white;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-  }
+nav img.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
 
-  .botao-seguir.seguindo {
-    background-color: white;   /* ou a cor que você quiser */
-    color: black;
-    border: 1px solid white;
-  }
+nav h1,
+nav h4 {
+  margin: 0 10px;
+}
 
-  .pontos{
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-    }
+nav button {
+  margin-left: 7px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-    .popular{
-        margin-left: 20px;
-        margin-bottom: 14px;
-      }
-  
-      .musicas{
-        margin-left: 25px;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-    
-      .musicas img{
-        width: 37px;
-        height: 37px;
-        border-radius: 5px;
-      }
+button.inscrever {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
 
-      .alinhar{
-        width: 565px;/* ou qualquer valor que funcione bem no seu layout */
-        display: flex;
-      align-items: center;
-      cursor: pointer;
-      gap: 10px;
-      padding: 6px 8px 6px 20px;
-      border-radius: 2px;
-      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
-    }
+.botoes {
+  display: flex;
+  gap: 10px; /* espaço entre os botões */
+}
 
-    .alinhar:hover{
-      background: var(--cor3);
-      transform: scale(1.08);
-      padding-right: 20px; 
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.botoes button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
 
-    }
+.botoes.entrar {
+  background-color: white;
+  font-weight: bold;
+}
 
-    .alinhar2{
-      width: 565px; /* ou qualquer valor que funcione bem no seu layout */
-        display: flex;
-      align-items: center;
-      cursor: pointer;
-      gap: 10px;
-      padding: 6px 8px 6px 20px;
-      border-radius: 2px;
-      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
-    }
+aside {
+  background-color: var(--cor0);
+  width: 30%;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
 
-    .alinhar2:hover{
-      background: var(--cor3);
-      transform: scale(1.08);
-      padding-right: 20px; 
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+.container {
+  display: flex;
+  height: 100vh; /* altura total da tela, opcional */
+  gap: 6px;
+}
 
-    .alinhar3{
-      width: 565px; /* ou qualquer valor que funcione bem no seu layout */
-        display: flex;
-      align-items: center;
-      cursor: pointer;
-      gap: 10px;
-      padding: 6px 8px 6px 20px;
-      border-radius: 2px;
-      transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
-    }
+aside h3 {
+  padding: 0;
+  margin: 0;
+  color: rgb(240, 238, 237);
+}
 
-    .alinhar3:hover{
-      background: var(--cor3);
-      transform: scale(1.08);
-      padding-right: 20px; 
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+.titulo-biblioteca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa o + pro final */
+  gap: 8px;
+  padding: 6px 0 20px 0px; /* top, right, bottom, left */
+}
 
-    .alinhar4{
-      width: 565px; /* ou qualquer valor que funcione bem no seu layout */
-      display: flex;
-      white-space: nowrap;
-    align-items: center;
-    cursor: pointer;
-    gap: 10px;
-    padding: 6px 8px 6px 20px;
-    border-radius: 2px;
-    transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
-  }
+.titulo-biblioteca h3 {
+  flex: 1;
+  margin: 0;
+}
 
-  .alinhar4:hover{
-    background: var(--cor3);
-    transform: scale(1.08);
-    padding-right: 20px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
+.botao-mais {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  color: white;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .alinhar5{
-    width: 565px; /* ou qualquer valor que funcione bem no seu layout */
-    display: flex;
-    white-space: nowrap;
+.icone-biblioteca {
+  width: 50px; /* Tamanho pequeno */
+  height: 50px; /* Força a altura igual ao width */
+  object-fit: contain; /* Mantém proporção da imagem */
+}
+
+.playlist button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.criar-playlist {
+  background-color: white;
+  font-weight: bold;
+}
+
+.fundo-playlist {
+  background-color: var(--cor3);
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  width: 92%;
+}
+
+.fundo-playlist h4 {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.fundo-playlist p {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.fundo-podcast {
+  background-color: var(--cor3);
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  width: 92%;
+}
+
+.fundo-podcast h4 {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.fundo-podcast p {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.podcast button {
+  padding: 8px 17px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.criar-podcast {
+  background-color: white;
+  font-weight: bold;
+}
+
+.tate {
+  background-color: var(--cor3);
+  border-radius: 10px; /* Bordas arredondadas */ /* Largura fixa opcional */
+  background: linear-gradient(to top, transparent 10%, rgb(124, 124, 124) 130%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 70%;
+  height: 100%;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.header-artista {
+  position: relative; /* para a info-artista se posicionar em cima da imagem */
+  width: 100%;
+}
+
+.tate-header {
+  background-image: url("imagens/tate-header2.jpg");
+  filter: brightness(85%);
+  background-size: cover;
+  background-position: center;
+  width: 940px;
+  height: 280px;
+  border-radius: 10px 10px 0 0;
+}
+
+.info-artista {
+  position: absolute;
+  top: 50%; /* meio vertical */
+  left: 30px; /* afastado da borda esquerda */
+  transform: translateY(-50%); /* centraliza certinho no meio vertical */
+  color: white;
+}
+
+.verificado {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 80px;
+  margin-left: 0;
+}
+
+.icon-verificado {
+  width: 40px;
+  height: 40px;
+}
+
+.info-artista h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.info-artista p {
+  font-weight: normal;
+}
+
+.debaixo-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.replay {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.play {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
+}
+
+.debaixo-header button {
+  background-color: var(--cor3);
+  box-shadow: 0 0 0 1px white;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao-seguir.seguindo {
+  background-color: white; /* ou a cor que você quiser */
+  color: black;
+  border: 1px solid white;
+}
+
+.pontos {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.popular {
+  margin-left: 20px;
+  margin-bottom: 14px;
+}
+
+.musicas {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.musicas img {
+  width: 37px;
+  height: 37px;
+  border-radius: 5px;
+}
+
+.alinhar {
+  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  display: flex;
   align-items: center;
   cursor: pointer;
   gap: 10px;
   padding: 6px 8px 6px 20px;
   border-radius: 2px;
-  transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease,
+    transform 0.3s ease;
 }
 
-.alinhar5:hover{
+.alinhar:hover {
   background: var(--cor3);
   transform: scale(1.08);
-  padding-right: 20px; 
+  padding-right: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-    .alinhar #um{
-      margin-left: 2px;
-      font-size: 18px;
-    }
-  
-      .alinhar #um{
-        margin-left: 2px;
-        font-size: 18px;
-      }
-      
-      .greedy-icon {
-        width: 37px;
-        height: 37px;
-        border-radius: 5px;
-         /* alinha o topo da imagem com o topo do texto */
-      }
+.alinhar2 {
+  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  padding: 6px 8px 6px 20px;
+  border-radius: 2px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease,
+    transform 0.3s ease;
+}
 
-      .tit-s{
-        margin-right: 207px;
-      }
-  
-      .tit-r{
-        margin-right: 186px;
-        white-space: nowrap;
-      }
-  
-      .tit-g{
-        margin-right: 250px;
-      }
+.alinhar2:hover {
+  background: var(--cor3);
+  transform: scale(1.08);
+  padding-right: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-      .tit-i{
-        margin-right: 208px;
-      }
+.alinhar3 {
+  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  padding: 6px 8px 6px 20px;
+  border-radius: 2px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease,
+    transform 0.3s ease;
+}
 
-      .tit-k{
-        margin-right: 60px;
-      }
+.alinhar3:hover {
+  background: var(--cor3);
+  transform: scale(1.08);
+  padding-right: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-      .sobre-hdois{
-        font-family: Arial;
-        font-weight: bold;
-        margin-top: 100px;
-        margin-left: 30px;
-      }
-      
-      .sobre-artista {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 30px;
-        border-radius: 12px;
-        margin-top: 0;
-        gap: 20px;
-        color: white;
-        margin-bottom: 30px;
-      }
-      
-      .tate-sobre {
-        background-image: url("imagens/sobre-tate.webp");
-        filter: brightness(100%);
-        background-size: cover;
-        background-position: center;
-        border-radius: 12px;
-        width: 100%;
-        height: 450px;
-        position: relative;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        color: white;
-      }
-      
-      .posicao-global {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: #0074E0; /* azul ou verde do Spotify */
-        color: white;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 17px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        z-index: 3;
-      }
-      
-      .posicao-global p {
-        margin: 0;
-        font-size: 16px;
-      }
-      
-      .posicao-global span {
-        font-size: 12px;
-        margin-top: 2px;
-      }
-      
-      .tate-sobre h2,
-      .tate-sobre .info-extra,
-      .tate-sobre .bio {
-        position: relative;
-        z-index: 2;
-        margin-bottom: 10px;
-      }
-      
-      .tate-sobre::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
-        z-index: 1;
-        border-radius: 12px;
-      }
-      
-      .texto-sobre {
-        max-width: 60%;
-      }
-      
-      .texto-sobre h2 {
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 24px;
-        margin-bottom: 15px;
-      }
-      
-      .bio {
-        font-size: 15px;
-        line-height: 1.6;
-        color: white;
-      }
-      
-      .info-extra {
-        margin-top: 15px;
-        font-size: 17px;
-        color: white;
-      }
-      
+.alinhar4 {
+  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  padding: 6px 8px 6px 20px;
+  border-radius: 2px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease,
+    transform 0.3s ease;
+}
+
+.alinhar4:hover {
+  background: var(--cor3);
+  transform: scale(1.08);
+  padding-right: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.alinhar5 {
+  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  padding: 6px 8px 6px 20px;
+  border-radius: 2px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease,
+    transform 0.3s ease;
+}
+
+.alinhar5:hover {
+  background: var(--cor3);
+  transform: scale(1.08);
+  padding-right: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.alinhar #um {
+  margin-left: 2px;
+  font-size: 18px;
+}
+
+.alinhar #um {
+  margin-left: 2px;
+  font-size: 18px;
+}
+
+.greedy-icon {
+  width: 37px;
+  height: 37px;
+  border-radius: 5px;
+  /* alinha o topo da imagem com o topo do texto */
+}
+
+.tit-s {
+  margin-right: 207px;
+}
+
+.tit-r {
+  margin-right: 186px;
+  white-space: nowrap;
+}
+
+.tit-g {
+  margin-right: 250px;
+}
+
+.tit-i {
+  margin-right: 208px;
+}
+
+.tit-k {
+  margin-right: 60px;
+}
+
+.sobre-hdois {
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.sobre-artista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 12px;
+  margin-top: 0;
+  gap: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.tate-sobre {
+  background-image: url("imagens/sobre-tate.webp");
+  filter: brightness(100%);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+
+.posicao-global {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #0074e0; /* azul ou verde do Spotify */
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.posicao-global p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.posicao-global span {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.tate-sobre h2,
+.tate-sobre .info-extra,
+.tate-sobre .bio {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+.tate-sobre::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.texto-sobre {
+  max-width: 60%;
+}
+
+.texto-sobre h2 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+}
+
+.info-extra {
+  margin-top: 15px;
+  font-size: 17px;
+  color: white;
+}
