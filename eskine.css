@@ -371,7 +371,7 @@ aside h3 {
 }
 
 .alinhar {
-  width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -390,7 +390,7 @@ aside h3 {
 }
 
 .alinhar2 {
-  width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -409,7 +409,7 @@ aside h3 {
 }
 
 .alinhar3 {
-  width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -428,7 +428,7 @@ aside h3 {
 }
 
 .alinhar4 {
-  width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -446,22 +446,23 @@ aside h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.alinhar5{
-  width: 500px; /* ou qualquer valor que funcione bem no seu layout */
+.alinhar5 {
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
-align-items: center;
-cursor: pointer;
-gap: 10px;
-padding: 6px 8px 6px 20px;
-border-radius: 2px;
-transition: background-color 0.8s ease, box-shadow 0.8s ease, transform 0.3s ease;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  padding: 6px 8px 6px 20px;
+  border-radius: 2px;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease,
+    transform 0.3s ease;
 }
 
-.alinhar5:hover{
-background: var(--cor3);
-transform: scale(1.08);
-padding-right: 20px; 
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.alinhar5:hover {
+  background: var(--cor3);
+  transform: scale(1.08);
+  padding-right: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .alinhar #um {
@@ -477,26 +478,26 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .tit-m {
-  margin-right: 142px;
+  margin-right: 150px;
 }
 
 .tit-r {
-  margin-right: 75px;
+  margin-right: 83px;
   white-space: nowrap;
 }
 
 .tit-e {
-  margin-right: 105px;
+  margin-right: 112px;
   white-space: nowrap;
 }
 
-.tit-rr{
-  margin-right: 62px;
+.tit-rr {
+  margin-right: 70px;
   white-space: nowrap;
 }
 
-.tit-t{
-  margin-right: 122px;
+.tit-t {
+  margin-right: 132px;
   white-space: nowrap;
 }
 
@@ -578,7 +579,7 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: width 0.2s linear;
 }
 
-.sobre-hdois{
+.sobre-hdois {
   font-family: Arial;
   font-weight: bold;
   margin-top: 100px;
@@ -617,7 +618,7 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #0074E0; /* azul ou verde do Spotify */
+  background-color: #0074e0; /* azul ou verde do Spotify */
   color: white;
   width: 70px;
   height: 70px;
@@ -655,7 +656,7 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   z-index: 1;
   border-radius: 12px;
 }
@@ -682,4 +683,3 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-size: 17px;
   color: white;
 }
-

@@ -370,7 +370,7 @@ aside h3 {
 }
 
 .alinhar {
-  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -389,7 +389,7 @@ aside h3 {
 }
 
 .alinhar2 {
-  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -408,7 +408,7 @@ aside h3 {
 }
 
 .alinhar3 {
-  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 595px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -427,7 +427,7 @@ aside h3 {
 }
 
 .alinhar4 {
-  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 585px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   white-space: nowrap;
   align-items: center;
@@ -447,7 +447,7 @@ aside h3 {
 }
 
 .alinhar5 {
-  width: 565px; /* ou qualquer valor que funcione bem no seu layout */
+  width: 585px; /* ou qualquer valor que funcione bem no seu layout */
   display: flex;
   white-space: nowrap;
   align-items: center;
@@ -484,24 +484,24 @@ aside h3 {
 }
 
 .tit-s {
-  margin-right: 207px;
+  margin-right: 220px;
 }
 
 .tit-r {
-  margin-right: 186px;
+  margin-right: 197px;
   white-space: nowrap;
 }
 
 .tit-g {
-  margin-right: 250px;
+  margin-right: 260px;
 }
 
 .tit-i {
-  margin-right: 208px;
+  margin-right: 213px;
 }
 
 .tit-k {
-  margin-right: 60px;
+  margin-right: 65px;
 }
 
 .sobre-hdois {
